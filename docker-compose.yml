@@ -1,0 +1,13 @@
+version: '3.9'
+
+services:
+  r3_db:
+    container_name: r3_db
+    image: postgres:12
+    ports:
+      - 5430:5432
+    environment:
+      - POSTGRES_USER=root
+      - POSTGRES_PASSWORD=root@123
+      - POSTGRES_DB=r3_db
+  
