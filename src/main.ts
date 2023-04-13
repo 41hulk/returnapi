@@ -6,7 +6,7 @@ async function bootstrap() {
   const app = await NestFactory.create(AppModule);
   const config = new DocumentBuilder()
     .setTitle('R3Turn')
-    .setDescription('Calculate you carbon footprint and offset ASAP ')
+    .setDescription('A more sustainable lifestyle and environment ')
     .setVersion('1.0.0')
     .build();
   const document = SwaggerModule.createDocument(app, config);
