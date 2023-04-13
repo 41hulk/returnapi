@@ -14,7 +14,7 @@ import { UserEntity } from './entity/user.entity';
       isGlobal: true,
     }),
     TypeOrmModule.forRoot({
-      url: process.env.DATABASE_URL,
+      // url: process.env.DATABASE_URL,
       type: 'postgres' || (process.env.DB_TYPE as any),
       host: 'localhost' || process.env.PG_HOST,
       port: 5430 || parseInt(process.env.PGPORT),
